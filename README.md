@@ -69,7 +69,7 @@ Sample Dockerfile:
  
  
  # Sample Test Unit
- <sup>
+ ```
  /**
  * Dependency Modules
  */
@@ -164,4 +164,4 @@ describe("Home Page", function() {
 	});
 });
    
-	</sup>
+	```
