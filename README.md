@@ -31,5 +31,29 @@ Sample Dockerfile:
  1) docker run --name jenkins -p 8080:8080 jenkins
  2) docker run -p 8080:8080 -v $PWD/jenkins:/var/jenkins_home jenkins
    
+# To run docker registry using docker image on docker
+   3) docker run -d -p 5000:5000 --restart always --name registry registry
+   
+   
+ # To push a new image to registry
+   
+   4) docker pull ubuntu
+   5)docker tag ubuntu localhost:5000/ubuntu
+   6)docker push localhost:5000/ubuntu
+# Docker compose
+   1) touch Dockerfile
+   ![image](https://user-images.githubusercontent.com/89519757/231203488-e37208ee-1d27-4a40-b2b9-7be06999aad3.png)
+   2) touch docker-compose.yml
+![image](https://user-images.githubusercontent.com/89519757/231203797-9c587897-b0f8-497c-8f46-fb89de892ef0.png)
+
+   
+ To run Docker -----> docker-compose up -d
+   
+ # Dockerfile.test
+  
+ ![image](https://user-images.githubusercontent.com/89519757/231204688-44ec4824-e2c2-4ace-b761-bf73586757e5.png)
+
+   
+ 
  
  
