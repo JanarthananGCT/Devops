@@ -4,7 +4,7 @@
 Reactjs+Docker+Jenkins+AWS Ec2:
 
 
-#Docker->
+# Docker->
 Docker:
    1) Install DockerCLI in your Local system and check Docker Running Status
    2) Add Dockerfile in your project Root Directory
